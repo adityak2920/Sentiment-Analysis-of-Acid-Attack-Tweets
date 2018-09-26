@@ -22,7 +22,7 @@ for _ in range(200):
 
 html_source=browser.page_source
 sourcedata= html_source.encode('utf-8')
-soup=bs(sourcedata, 'lxml')
+soup=bs(sourcedata, 'html.parser')
 arr = soup.body.findAll('a', class_='account-group js-account-group js-action-profile js-user-profile-link js-nav')
 pclass = soup.body.find_all('p', class_='TweetTextSize TweetTextSize--normal js-tweet-text tweet-text')
 
