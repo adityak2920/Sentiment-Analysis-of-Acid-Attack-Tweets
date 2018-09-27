@@ -13,4 +13,4 @@ For tweet text element 'p' with class name as shown by the same way as stated ab
 In this part created a file name word.txt and for 200 iterations from user id part extracted attribute 'href' and for tweet extracted it's text part and wrote in word.txt file and i also included try and exception statement because if no. of tweets is less than 200 then it should not throw error.
 
 ### Note: regarding file.json
-I also included file.json just for json_parse.py where i parsed this file.
+I also included file.json(and i generated file.json using twint python package) just for json_parse.py where i parsed this file.
