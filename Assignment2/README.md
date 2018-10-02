@@ -12,8 +12,6 @@ India has made international headlines for horrific rape cases in recent years, 
     As she slipped into unconsciousness, her assailants grew bolder. They stripped off her clothes and had the 
     remaining acid thrown at her private body parts. While she was conscious, her boyfriend silently watched.
     
-![screenshot 2018-10-02 at 12 36 26 pm](https://user-images.githubusercontent.com/35501699/46333938-dabf2780-c63f-11e8-92f8-fdd17089e43c.png)
-
 There are 250 to 300 acid attacks reported in India every year, despite laws restricting the sale of acid or other deadly chemicals, according to Stop Acid Attacks, a non-profit group. With acids - something as ubiquitous as toilet-cleaning liquids readily available at the corner store and as cheap as 30 cents a litre, these assaults have emerged as a preferred weapon of violence against women.
 According to the law 326A, against acid attacks the law states: 
 "Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt, shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine"
