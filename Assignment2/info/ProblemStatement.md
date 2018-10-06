@@ -3,7 +3,7 @@ The main contributions of this paper can be summarized as:
 
   1.The labeled dataset for learning patterns in tweets exhibiting acid attack threats ideation which is scrapped using      keywords like 'acid attack india', 'throw acid', 'acid attack', etc. and the dataset is manually labeled.
 
-  2.Applied LSTM for feature attraction from dataset which is related with acid attack threats
+  2.Applying LSTM for feature attraction from dataset which is related with acid attack threats
 
   3.Efforts to prevent acid attack
 
