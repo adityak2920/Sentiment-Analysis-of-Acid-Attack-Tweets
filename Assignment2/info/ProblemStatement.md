@@ -1,1 +1,2 @@
-
+Acid attack is the worst of the crimes that take place not only in India, but in the world. Concentrated hydrochloric acid is used as a weapon in this act of violence. And all these crimes social media play a very crucial role in this paper we will mainly focus on microblogging website, Twitter. Problem statement : An Analysis of Acid Attack Threat Tweets using LSTMs.
+In this paper we will collect data from twitter using certain keywords such as '#acidattackthreat', 'acid attack', 'acid attack threat', '#acidthreat','#throwacid', 'throw acid', '#acidattack' 
