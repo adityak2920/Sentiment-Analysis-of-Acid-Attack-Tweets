@@ -14,7 +14,7 @@ pan_data = pd.DataFrame([], columns=['S.No.', 'tweetid', 'tweettext'])
 for ix in range(600):                # parsing a json format and accessing username and tweets
     tweetid = data[ix]['username']
     tweettext = data[ix]['tweet']
-    
+   
     app_data = {"S.No.":ix+1,
                 "tweetid":tweetid,
                 "tweettext":tweettext
