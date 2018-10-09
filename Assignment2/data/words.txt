@@ -25,7 +25,15 @@ Output:
 5, 'tht': 42, 'entered': 13, 'department': 10, 'pity': 31}
 
 The word with the low tfidf means it’s not unique it appears in every tweets means we can scrape using this word. 
-In Code for tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which is lowest in that tweet. Means we can consider them for scrapping.
+In Code for tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which
+is lowest in that tweet. Means we can consider them for scrapping.
 Full code and output are on link: https://github.com/adityak2920/tfidf/blob/master/tfidf.ipynb
 
-For 
+For data annotation:
+1. Acid Attack Threat present : 1
+            1. tweets in which user is giving threat to another user like 'I will throw acid on you' or 'i will kill with acid' 
+            2. tweets like 'we should throw acid on acid attackers' also considered as threat
+            
+2.  Acid Attack Threat absent : 0
+            1. news reportings like 'Acid attack on 3 women in MP'
+            2. like 'acid attack survivors should be given reservation' 
