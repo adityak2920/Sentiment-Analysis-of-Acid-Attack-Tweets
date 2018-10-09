@@ -1,19 +1,31 @@
-In the age of social media, it’s not very to difficult to collect data related to acid attack threat because an increasing number of people are turning to the Internet to vent their frustration.Anonymised data was collected from microblogging website Twitter - specifically, content containing acid attack threats related to india over the period of October 2018 to December 2008. The total no.of tweets collected for this purpose are around 28000. After that in preprocessing we tried to remove retweets as many to maintain certain no. of tweets and at last got approximately 7000 tweets. The tweets are collected which have following words or phrases:
-‘acid threat’,’acid attack threat’, ‘acidattack’, ‘acid attack india’, ‘punish acid india’, ‘should acid india’, ‘kill acid india’ ,’acid throw india’. The tweets were collected without knowing the sentiments like whether
-It’s a threat like ‘I will pour acid on you’ or ‘we should throw acid’
-It’s reporting of some acid attack news like ‘Acid attack on 3 girls in MP’.
-3    It can be something like this also ‘acid should be banned in india to stop acid attack’
-
-TF-IDF for a set of similar tweets for the keyword ‘kill acid india’:
-Code for this using sklearn given below:
+In the age of social media, it’s not very to difficult to collect data related to acid attack threat because an increasing
+number of people are turning to the Internet to vent their frustration.Anonymised data was collected from microblogging
+website Twitter - specifically, content containing acid attack threats related to india over the period of October 2018 to
+December 2008. The total no.of tweets collected for this purpose are around 28000. After that in preprocessing we tried to
+remove retweets as many to maintain certain no. of tweets and at last got approximately 7000 tweets. The tweets are collected
+which have following words or phrases:
+‘acid threat’,’acid attack threat’, ‘acidattack’, ‘acid attack india’, ‘punish acid', india’, ‘should acid india’, ‘kill acid
+india’ ,’acid throw india’.  The tweets were collected without knowing the sentiments like whether
+1. It’s a threat like ‘I will pour acid on you’ or ‘we should throw acid’
+2. It’s reporting of some acid attack news like ‘Acid attack on 3 girls in MP’.
+3. It can be something like this also ‘acid should be banned in india to stop acid attack’
+For choosing words and phrases for scraping we used tfidf method for frequency of that word.For Example-
+TF-IDF for a set of similar tweets for the keyword ‘kill acid india’.Code for this using sklearn given below:
 Code:           
             from sklearn.feature_extraction.text import TfidfVectorizer
             vectorizer = TfidfVectorizer()
             response = vectorizer.fit_transform(tweets1)
             print(vectorizer.vocabulary_)
 Output:
-      {'death': 9, 'penalty': 29, 'week': 46, 'dare': 8, 'kill': 22, 'someone': 37, 'real': 35, 'fact': 15, 'values': 43, 'humans': 20, 'india': 21, 'made': 25, 'political': 32, 'leaders': 24, 'worse': 49, 'thn': 41, 'animals': 2, 'free': 17, 'attacks': 3, 'bribe': 4, 'ok': 28, 'knw': 23, 'power': 33, 'gandis': 18, 'christian': 6, 'world': 48, 'slowly': 36, 'surely': 38, 'modi': 26, 'taking': 39, 'action': 1, 'think': 40, 'forgets': 16, 'wht': 47, 'promised': 34, 'never': 27, 'wait': 44, 'watch': 45, 'people': 30, 'huge': 19, 'corruption': 7, 'dimak': 11, 'eaten': 12, 'evn': 14, 'acid': 0, 'cant': 5, 'tht': 42, 'entered': 13, 'department': 10, 'pity': 31}
+      {'death': 9, 'penalty': 29, 'week': 46, 'dare': 8, 'kill': 22, 'someone': 37, 'real': 35, 'fact': 15, 'values': 43,
+'humans': 20, 'india': 21, 'made': 25, 'political': 32, 'leaders': 24, 'worse': 49, 'thn': 41, 'animals': 2, 'free': 17,
+'attacks': 3, 'bribe': 4, 'ok': 28, 'knw': 23, 'power': 33, 'gandis': 18, 'christian': 6, 'world': 48, 'slowly': 36,
+'surely':38, 'modi': 26, 'taking': 39, 'action': 1, 'think': 40, 'forgets': 16, 'wht': 47, 'promised': 34, 'never': 27,
+'wait': 44, 'watch': 45, 'people': 30, 'huge': 19, 'corruption': 7, 'dimak': 11, 'eaten': 12, 'evn': 14, 'acid': 0, 'cant':
+5, 'tht': 42, 'entered': 13, 'department': 10, 'pity': 31}
 
 The word with the low tfidf means it’s not unique it appears in every tweets means we can scrape using this word. 
-In Code od tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which is lowest in that tweet. Means we can consider them for scrapping.
-v
+In Code for tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which is lowest in that tweet. Means we can consider them for scrapping.
+Full code and output are on link: https://github.com/adityak2920/tfidf/blob/master/tfidf.ipynb
+
+For 
