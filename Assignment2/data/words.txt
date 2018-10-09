@@ -2,8 +2,8 @@ In the age of social media, it’s not very to difficult to collect data related
 number of people are turning to the Internet to vent their frustration.Anonymised data was collected from microblogging
 website Twitter - specifically, content containing acid attack threats related to india over the period of October 2018 to
 December 2008. The total no.of tweets collected for this purpose are around 28000. After that in preprocessing we tried to
-remove retweets as many to maintain certain no. of tweets and at last got approximately 7000 tweets. The tweets are collected
-which have following words or phrases:
+remove retweets as many to maintain certain no. of tweets and at last after labelling got approximately 7000 tweets. The
+tweets are collected which have following words or phrases:
 ‘acid threat’,’acid attack threat’, ‘acidattack’, ‘acid attack india’, ‘punish acid', india’, ‘should acid india’, ‘kill acid
 india’ ,’acid throw india’.  The tweets were collected without knowing the sentiments like whether
 1. It’s a threat like ‘I will pour acid on you’ or ‘we should throw acid’
@@ -25,9 +25,9 @@ Output:
 5, 'tht': 42, 'entered': 13, 'department': 10, 'pity': 31}
 
 The word with the low tfidf means it’s not unique it appears in every tweets means we can scrape using this word. 
-In Code for tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which
+In Code for tfidf, response gives term document matrix. So, from response tfidf for 'kill' and 'india' are 0.1139 in a tweet which
 is lowest in that tweet. Means we can consider them for scrapping.
-Full code and output are on link: https://github.com/adityak2920/tfidf/blob/master/tfidf.ipynb
+Full code and output are here link: https://github.com/adityak2920/tfidf/blob/master/tfidf.ipynb
 
 For data annotation:
 1. Acid Attack Threat present : 1
