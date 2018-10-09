@@ -16,3 +16,4 @@ Output:
 
 The word with the low tfidf means it’s not unique it appears in every tweets means we can scrape using this word. 
 In Code od tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which is lowest in that tweet. Means we can consider them for scrapping.
+v
