@@ -5,7 +5,14 @@ It’s reporting of some acid attack news like ‘Acid attack on 3 girls in MP�
 3    It can be something like this also ‘acid should be banned in india to stop acid attack’
 
 TF-IDF for a set of similar tweets for the keyword ‘kill acid india’:
-Code for this using sklearn given below;
+Code for this using sklearn given below:
+Code:           
+            from sklearn.feature_extraction.text import TfidfVectorizer
+            vectorizer = TfidfVectorizer()
+            response = vectorizer.fit_transform(tweets1)
+            print(vectorizer.vocabulary_)
+Output:
+      {'death': 9, 'penalty': 29, 'week': 46, 'dare': 8, 'kill': 22, 'someone': 37, 'real': 35, 'fact': 15, 'values': 43, 'humans': 20, 'india': 21, 'made': 25, 'political': 32, 'leaders': 24, 'worse': 49, 'thn': 41, 'animals': 2, 'free': 17, 'attacks': 3, 'bribe': 4, 'ok': 28, 'knw': 23, 'power': 33, 'gandis': 18, 'christian': 6, 'world': 48, 'slowly': 36, 'surely': 38, 'modi': 26, 'taking': 39, 'action': 1, 'think': 40, 'forgets': 16, 'wht': 47, 'promised': 34, 'never': 27, 'wait': 44, 'watch': 45, 'people': 30, 'huge': 19, 'corruption': 7, 'dimak': 11, 'eaten': 12, 'evn': 14, 'acid': 0, 'cant': 5, 'tht': 42, 'entered': 13, 'department': 10, 'pity': 31}
 
-
-The word with the low tfidf means it’s not unique it appears in every tweets means this is necessary for example the word
+The word with the low tfidf means it’s not unique it appears in every tweets means we can scrape using this word. 
+In Code od tfidf, response gives term document matrix. So, from response tfidf for kill and india are 0.1139 in a tweet which is lowest in that tweet. Means we can consider them for scrapping.
